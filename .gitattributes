@@ -1,0 +1,2 @@
+# Shell scripts keep LF line ends everywhere: a CRLF breaks "curl | sh".
+*.sh text eol=lf

@@ -1,0 +1,47 @@
+PeterGanuRusty Software License
+Copyright (c) 2026 Charles Ganu. All rights reserved.
+
+1. Ownership. PeterGanuRusty, the pgr program, its source code, documentation,
+   benchmark data, website, films and all related material (together, the
+   "Software") are owned by Charles Ganu and are protected by copyright and other
+   laws. No right of ownership passes to you.
+
+2. What you may do. You may download the released programs of the Software from
+   the official release page of this repository, and install and run them, free
+   of charge, on computers you own or control, for personal, educational or
+   internal business use, including with AI coding agents that you operate.
+
+3. What you may not do. Except where applicable law expressly allows it in spite
+   of this restriction, you may not:
+   (a) copy, publish, distribute, sell, rent, lease, lend, sublicense or otherwise
+       make the Software available to anyone else, other than by pointing them to
+       the official release page;
+   (b) modify, adapt, translate or create derivative works of the Software;
+   (c) reverse engineer, decompile, disassemble or otherwise attempt to derive the
+       source code, algorithms, data formats or methods of the Software;
+   (d) use the Software or its output to build or train a product or service that
+       competes with the Software;
+   (e) remove or change any notice of ownership or licence in the Software.
+
+4. Third-party components. The released programs include open-source components
+   that remain under their own licences. They are listed with those licences in
+   THIRD-PARTY-NOTICES.txt inside each release package. Nothing in this licence
+   limits the rights those licences give you for those components.
+
+5. No warranty. The Software is provided "as is", without warranty of any kind,
+   express or implied, including warranties of merchantability, fitness for a
+   particular purpose and non-infringement.
+
+6. Limitation of liability. To the extent the law allows, the owner is not liable
+   for any damages of any kind arising from the use of, or inability to use, the
+   Software, even if advised of the possibility of such damages.
+
+7. Termination. This licence ends automatically if you break any of its terms. You
+   must then stop using the Software and delete every copy you hold.
+
+8. Reservation. All rights not expressly granted in this licence are reserved. The
+   owner may publish different terms for later releases; each release is governed
+   by the terms published with it.
+
+Questions about this licence: open an issue at
+https://github.com/Charlesganu2004/PeterGanuRusty/issues
