@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:00:00.700 --> 00:00:05.789
+PeterGanuRusty. A desktop command-line
+tool for AI coding agents.
+
+2
+00:00:07.389 --> 00:00:09.217
+Rust. Local. No account.
+
+3
+00:00:11.414 --> 00:00:14.193
+The same task, with and without PGR.
+
+4
+00:00:16.412 --> 00:00:19.723
+72% to 80% fewer tokens.
+
+5
+00:00:21.323 --> 00:00:23.703
+Fully correct in 12 of 12 runs.
+
+6
+00:00:26.235 --> 00:00:27.850
+One command installs it.

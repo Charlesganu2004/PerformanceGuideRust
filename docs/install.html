@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0c0d10">
+<title>Install: PeterGanuRusty (pgr)</title>
+<meta name="description" content="Install PeterGanuRusty (pgr) with one paste on Windows, macOS or Linux, run your first commands, and read the licence. No account and no administrator rights.">
+<meta property="og:title" content="Install: PeterGanuRusty (pgr)">
+<meta property="og:description" content="One paste installs pgr. No account, no administrator rights.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 4v16M7 4h6.5a4.25 4.25 0 0 1 0 8.5H7' fill='none' stroke='%23ff7a3d' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='18.5' cy='18.6' r='1.9' fill='%23ff7a3d'/%3E%3C/svg%3E">
+<script>(function () { var r = document.documentElement; r.className += " js"; try { var t = localStorage.getItem("pgr-theme"); if (t === "light" || t === "dark") r.setAttribute("data-theme", t); } catch (e) { /* no storage: follow the system */ } })();</script>
+<link rel="stylesheet" href="assets/site.css?v=f814f77e">
+</head>
+<body class="install">
+<a class="skip" href="#main">Skip to content</a>
+<!--slot:nav--><header class="nav" id="nav">
+    <div class="nav-in">
+      <a class="brand" href="index.html" aria-label="PeterGanuRusty, overview"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4v16M7 4h6.5a4.25 4.25 0 0 1 0 8.5H7"/><circle cx="18.5" cy="18.6" r="1.9"/></svg><span>PeterGanuRusty</span></a>
+      <nav class="nav-links" aria-label="Pages">
+        <a href="index.html">Overview</a>
+        <a href="results.html">Results</a>
+        <a href="teams.html">Teams</a>
+        <a href="install.html" aria-current="page">Install</a>
+      </nav>
+      <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch between the dark and the light theme"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g class="sun"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7"/></g><path class="moon" d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.2 8.2 0 1 0 10.2 10.2z"/></svg></button>
+    </div>
+  </header><!--/slot:nav-->
+<main id="main">
+
+  <section class="screen" id="top" aria-labelledby="title" style="padding-top:clamp(3rem,8vh,6rem)">
+    <div class="wrap stack">
+      <p class="eyebrow">Install</p>
+      <h1 id="title" class="display" aria-label="Install it in one paste."><span class="w" aria-hidden="true" style="--i:0"><span>Install</span></span> <span class="w" aria-hidden="true" style="--i:1"><span>it</span></span> <span class="w" aria-hidden="true" style="--i:2"><span>in</span></span> <span class="w" aria-hidden="true" style="--i:3"><span>one</span></span> <span class="w" aria-hidden="true" style="--i:4"><span>paste.</span></span></h1>
+      <p class="lede">No account and no administrator rights. The installer downloads one program file, checks it against the published checksums and puts it in a folder of your own account. Nothing else is installed.</p>
+      <!--slot:cmdbox--><div class="cmd" data-cmdbox>
+          <div class="cmd-top"><div class="seg" role="radiogroup" aria-label="System"><button type="button" role="radio" aria-checked="true" tabindex="0" data-value="windows">Windows</button><button type="button" role="radio" aria-checked="false" tabindex="-1" data-value="unix">macOS and Linux</button></div><p class="cmd-note" data-sys="windows">Run it in PowerShell. No administrator rights.</p><p class="cmd-note" data-sys="unix" hidden>Run it in a terminal. No root.</p></div>
+          <div class="cmd-line" data-sys="windows"><code class="cmd-code">irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex</code><button type="button" class="copy" data-copy="irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex" aria-label="Copy the Windows command"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></div>
+          <div class="cmd-line" data-sys="unix" hidden><code class="cmd-code">curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh</code><button type="button" class="copy" data-copy="curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh" aria-label="Copy the macOS and Linux command"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></div>
+        </div><!--/slot:cmdbox-->
+    </div>
+  </section>
+
+  <section class="screen screen--alt" id="first" aria-labelledby="first-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">Then</p><h2 class="title" id="first-h">Three commands to start.</h2><p class="lede">Run them inside the repository you want to search.</p></div>
+      <!--slot:first--><div class="rows rv">
+      <article class="row"><div><code class="cmdpill">pgr refresh</code><p>Prepare the repository you are in. Run it once, and again after the code changes.</p></div><button type="button" class="copy" data-copy="pgr refresh" aria-label="Copy pgr refresh"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></article>
+      <article class="row"><div><code class="cmdpill">pgr ask about:SomeFunction &quot;find:where tokens expire&quot;</code><p>Ask two questions in one call: where SomeFunction is defined and what calls it (use a name from your code), and which code does a job you can only describe.</p></div><button type="button" class="copy" data-copy="pgr ask about:SomeFunction &quot;find:where tokens expire&quot;" aria-label="Copy pgr ask about:SomeFunction &quot;find:where tokens expire&quot;"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></article>
+      <article class="row"><div><code class="cmdpill">pgr help</code><p>Every command, with what it prints.</p></div><button type="button" class="copy" data-copy="pgr help" aria-label="Copy pgr help"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></article>
+    </div><!--/slot:first-->
+    </div>
+  </section>
+
+  <section class="screen" id="agent" aria-labelledby="agent-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">Tell your agent</p><h2 class="title" id="agent-h">Four lines for your agent.</h2><p class="lede">Put these in the instructions your agent reads at the start, so it asks pgr before it reads files.</p></div>
+      <!--slot:agent--><div class="cmd rv"><div class="cmd-line"><code class="cmd-code cmd-multi">Before reading files to find where something is, run pgr ask.
+For a name, run pgr ask about:NAME: the definition, the callers and what it calls.
+For a job you cannot name, run pgr ask &quot;find:what the code does&quot;.
+Open a file only for the lines the answer names.</code><button type="button" class="copy" data-copy="Before reading files to find where something is, run pgr ask.
+For a name, run pgr ask about:NAME: the definition, the callers and what it calls.
+For a job you cannot name, run pgr ask &quot;find:what the code does&quot;.
+Open a file only for the lines the answer names." aria-label="Copy the four lines"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></div></div><!--/slot:agent-->
+    </div>
+  </section>
+
+  <section class="screen screen--alt" id="downloads" aria-labelledby="downloads-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">Downloads</p><h2 class="title" id="downloads-h">Or take the file yourself.</h2><p class="lede">Each file is a single program. The checksums are published beside them.</p></div>
+      <!--slot:downloads--><div class="rows rv">
+      <article class="row"><div><h3>Windows, x86-64</h3><p>pgr-windows-x86_64.exe, 43.7 MB</p></div><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/pgr-windows-x86_64.exe">Download</a></article>
+      <article class="row"><div><h3>macOS, Apple silicon</h3><p>pgr-macos-aarch64, 41.9 MB</p></div><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/pgr-macos-aarch64">Download</a></article>
+      <article class="row"><div><h3>macOS, Intel</h3><p>pgr-macos-x86_64, 42.1 MB</p></div><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/pgr-macos-x86_64">Download</a></article>
+      <article class="row"><div><h3>Linux, x86-64</h3><p>pgr-linux-x86_64, 42.7 MB</p></div><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/pgr-linux-x86_64">Download</a></article>
+      <article class="row"><div><h3>Linux, ARM64</h3><p>pgr-linux-aarch64, 41.7 MB</p></div><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/pgr-linux-aarch64">Download</a></article>
+    </div>
+    <details class="more after rv"><summary>Details: checksums, installer scripts and Python wheels</summary><div class="more-body"><p>The installer scripts and the checksums of every program file:</p><div class="btn-row"><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1">install.ps1</a><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh">install.sh</a><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/SHA256SUMS.txt">SHA256SUMS.txt</a><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/pgr-agent-box-kit.zip">pgr-agent-box-kit.zip</a><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/pgr-hooks-kit.zip">pgr-hooks-kit.zip</a></div><p>The release also holds 5 Python wheel files.</p><div class="btn-row"><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest">The release page</a></div><p>Version 0.3.0.</p></div></details><!--/slot:downloads-->
+    </div>
+  </section>
+
+  <section class="screen" id="licence" aria-labelledby="licence-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">Licence</p><h2 class="title" id="licence-h">Free to use. Not open source.</h2></div>
+      <!--slot:licence--><div class="pair rv"><div class="best"><h3 class="title">You may</h3><ul class="bullets"><li>Download pgr from the release page and install it, free of charge.</li><li>Run it on computers you own or control, for personal, educational or internal business use.</li><li>Use it with the AI coding agents that you operate.</li></ul></div><div><h3 class="title">You may not</h3><ul class="bullets"><li>Copy it, sell it or give it to anyone else. Point them to the release page instead.</li><li>Change it, or take it apart to learn how it works.</li><li>Use it or its output to build a product that competes with it.</li></ul></div></div>
+      <p class="note after rv"><b>Proprietary, not open source.</b> The source code is not published. These are the main points; the licence file has the full terms.</p>
+      <div class="btn-row after rv"><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/blob/main/LICENSE.txt">Read the licence</a><a class="btn" href="https://github.com/Charlesganu2004/PeterGanuRusty/issues">Ask a question</a></div><!--/slot:licence-->
+    </div>
+  </section>
+
+  <section class="screen screen--alt" id="tested" aria-labelledby="tested-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">Checked</p><h2 class="title" id="tested-h">What was tested.</h2></div>
+      <!--slot:tested--><p class="note rv">Last checked 13 October 2026, before the release moved to this repository. No later run of the installers is recorded.</p>
+      <div class="pair after rv"><div class="best"><h3 class="title">Ran</h3><ul class="bullets"><li>The Windows installer, on Windows 11, from the public release, followed by a first index build and a query in a new repository.</li><li>The shell installer, on Ubuntu, from the public release, with the same first index build and query.</li><li>Installing the wheel with pip, on both of those systems.</li><li>The build workflow installed and ran the Windows, Linux x86-64 and macOS Apple-silicon builds.</li></ul></div><div><h3 class="title">Not run</h3><ul class="bullets"><li>The Linux ARM64 and the macOS Intel builds were cross-compiled and checked, not run.</li><li>The Linux builds need the GNU C library, so Alpine (musl) is not covered yet.</li></ul></div></div><!--/slot:tested-->
+    </div>
+  </section>
+
+</main>
+<!--slot:foot--><footer class="foot">
+  <div class="wrap foot-in">
+    <nav aria-label="More"><a href="index.html">Overview</a><a href="results.html">Results</a><a href="teams.html">Teams</a><a href="install.html">Install</a><a href="https://github.com/Charlesganu2004/PeterGanuRusty">Public repository</a><a href="https://github.com/Charlesganu2004/PeterGanuRusty/blob/main/LICENSE.txt">Licence</a></nav>
+    <p>Copyright (c) 2026 Charles Ganu. All rights reserved. PeterGanuRusty is proprietary software: free to download and use, not open source. The source code is not published.</p>
+    <p>Built 2026-10-20 from the measured data. https://charlesganu2004.github.io/PeterGanuRusty/</p>
+  </div>
+</footer><!--/slot:foot-->
+<script src="data/showcase.js?v=c8330b98" defer></script>
+<script src="assets/site.js?v=c5bd0700" defer></script>
+</body>
+</html>

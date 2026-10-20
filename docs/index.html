@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0c0d10">
+<title>PeterGanuRusty (pgr): find code in one step</title>
+<meta name="description" content="PeterGanuRusty (pgr) tells an AI coding agent where a function is defined and what calls it, in one step. It runs on your own machine with no account. Measured results and one install command.">
+<meta property="og:title" content="PeterGanuRusty (pgr): find code in one step">
+<meta property="og:description" content="A command for AI coding agents that finds code in one step. Local, no account, with measured results.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 4v16M7 4h6.5a4.25 4.25 0 0 1 0 8.5H7' fill='none' stroke='%23ff7a3d' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='18.5' cy='18.6' r='1.9' fill='%23ff7a3d'/%3E%3C/svg%3E">
+<script>(function () { var r = document.documentElement; r.className += " js"; try { var t = localStorage.getItem("pgr-theme"); if (t === "light" || t === "dark") r.setAttribute("data-theme", t); } catch (e) { /* no storage: follow the system */ } })();</script>
+<link rel="stylesheet" href="assets/site.css?v=f814f77e">
+</head>
+<body class="home">
+<a class="skip" href="#main">Skip to content</a>
+<!--slot:nav--><header class="nav" id="nav">
+    <div class="nav-in">
+      <a class="brand" href="index.html" aria-label="PeterGanuRusty, overview"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 4v16M7 4h6.5a4.25 4.25 0 0 1 0 8.5H7"/><circle cx="18.5" cy="18.6" r="1.9"/></svg><span>PeterGanuRusty</span></a>
+      <nav class="nav-links" aria-label="Pages">
+        <a href="index.html" aria-current="page">Overview</a>
+        <a href="results.html">Results</a>
+        <a href="teams.html">Teams</a>
+        <a href="install.html">Install</a>
+      </nav>
+      <button type="button" class="icon-btn" data-theme-toggle aria-label="Switch between the dark and the light theme"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g class="sun"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7"/></g><path class="moon" d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.2 8.2 0 1 0 10.2 10.2z"/></svg></button>
+    </div>
+  </header><!--/slot:nav-->
+<main id="main">
+
+  <section class="hero" id="top" aria-labelledby="title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">PeterGanuRusty, pgr for short</p>
+        <h1 id="title" class="display" aria-label="Find code in one step."><span class="w" aria-hidden="true" style="--i:0"><span>Find</span></span> <span class="w" aria-hidden="true" style="--i:1"><span>code</span></span> <span class="w" aria-hidden="true" style="--i:2"><span>in</span></span> <span class="w" aria-hidden="true" style="--i:3"><span>one</span></span> <span class="w" aria-hidden="true" style="--i:4"><span>step.</span></span></h1>
+        <p class="lede">Ask where a function is defined and what calls it. pgr answers an AI coding agent in one step, on your own machine, with no account.</p>
+        <!--slot:cmdbox--><div class="cmd" data-cmdbox>
+          <div class="cmd-top"><div class="seg" role="radiogroup" aria-label="System"><button type="button" role="radio" aria-checked="true" tabindex="0" data-value="windows">Windows</button><button type="button" role="radio" aria-checked="false" tabindex="-1" data-value="unix">macOS and Linux</button></div><p class="cmd-note" data-sys="windows">Run it in PowerShell. No administrator rights.</p><p class="cmd-note" data-sys="unix" hidden>Run it in a terminal. No root.</p></div>
+          <div class="cmd-line" data-sys="windows"><code class="cmd-code">irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex</code><button type="button" class="copy" data-copy="irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex" aria-label="Copy the Windows command"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></div>
+          <div class="cmd-line" data-sys="unix" hidden><code class="cmd-code">curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh</code><button type="button" class="copy" data-copy="curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh" aria-label="Copy the macOS and Linux command"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></div>
+        </div><!--/slot:cmdbox-->
+      </div>
+      <div class="hero-side">
+        <!--slot:replay--><div class="replay" role="group" aria-label="The same three lookups, with and without pgr">
+    <div class="replay-top"><p class="eyebrow">The same three lookups</p><button type="button" class="replay-btn" aria-label="Play the picture again"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4.5v4.6h-4.6"/></svg>Replay</button></div>
+    <p class="sr-only">Without pgr, an agent read 294k tokens over 4 turns to answer three lookups. With pgr preparing the answers first, it read 71k tokens over 1 turn: 76% fewer tokens.</p>
+    <div class="lane lane--ref" aria-hidden="true">
+      <div class="lane-head"><span class="lane-name">Without pgr</span><span class="lane-read"><b data-tokens="293653" data-final="294k">294k</b> tokens, <span data-turns data-final="4 turns">4 turns</span></span></div>
+      <div class="track"><i class="blk" style="--i:0;--w:25.000%">1</i><i class="blk" style="--i:1;--w:25.000%">2</i><i class="blk" style="--i:2;--w:25.000%">3</i><i class="blk" style="--i:3;--w:25.000%">4</i></div>
+    </div>
+    <div class="lane lane--best" aria-hidden="true">
+      <div class="lane-head"><span class="lane-name">With pgr, answers prepared first</span><span class="lane-read"><b data-tokens="70631" data-final="71k">71k</b> tokens, <span data-turns data-final="1 turn">1 turn</span></span></div>
+      <div class="track"><i class="blk" style="--i:0;--w:24.053%">1</i></div>
+    </div>
+    <p class="delta"><b data-count="76" data-suffix="%">76%</b><span>fewer tokens</span></p>
+    <p class="fine">One measured case: Claude Haiku 5.5, low effort, the original questions.</p>
+  </div><!--/slot:replay-->
+        <div class="btn-row"><a class="btn" href="results.html">See the results</a><!--slot:watch--><a class="btn" href="#ad">Watch the ad, 34 seconds</a><!--/slot:watch--></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen screen--alt" id="saves" aria-labelledby="saves-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">What it saves</p><h2 class="title" id="saves-h">Fewer tokens. Fewer turns.</h2></div>
+      <!--slot:saves--><div class="stack">
+      <div class="rv"><span class="num num--accent" aria-label="72% to 80%"><span data-count="72" data-suffix="%">72%</span><span class="u">to</span> <span data-count="80" data-suffix="%">80%</span></span><p class="stat-label"><b>fewer tokens</b> than an agent without pgr, when pgr prepares the answers before the agent starts. Measured in four tests: two models, each on two sets of questions.</p></div>
+      <p class="note rv">When the agent asks pgr itself, with no brief prepared first, the saving was <b>28% to 54%</b>.</p>
+      <div class="stats rv"><div><b>1 turn</b><span>instead of 4, in the first test</span></div><div><b>12 of 12</b><span>runs fully correct, over the four tests</span></div><div><b>86 files</b><span>one Python project, so a small test</span></div></div>
+      <details class="more rv"><summary>Details: read before relying on it</summary><div class="more-body"><ul class="bullets"><li>The tests ran on one Python project of 86 files, with three lookup questions, on Claude Haiku 5.5, low effort and Claude Sonnet 5.5, medium effort.</li><li>The ready brief means pgr prepared the answers before the agent started. The agent had no command to call. The questions suit it: two of the three in each set name the function.</li><li>The people who built pgr wrote the questions. The second set was written after the first, but the ready brief was written after both had been run, so it is not an untouched test.</li><li>Open-ended work was not tested: finding a bug, changing code, or exploring a repository the agent was not pointed at.</li><li>The agents without pgr were run a day before the team tests, so that comparison crosses a day. On the test machine another tool altered some of their reads, which lowered their correct answers, so pgr is compared with them on tokens and turns, not on correct answers.</li></ul><div class="btn-row"><a class="btn" href="results.html#method">All the limits, on the Results page</a></div></div></details>
+      <div class="btn-row rv"><a class="btn btn--primary" href="results.html">See all the results</a></div>
+    </div><!--/slot:saves-->
+    </div>
+  </section>
+
+  <section class="screen" id="does" aria-labelledby="does-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">What it does</p><h2 class="title" id="does-h">Four things for an agent.</h2><p class="lede">Each part says how far it was measured.</p></div>
+      <!--slot:does--><div class="rows rv">
+        <article class="row"><div><h3>Finds a definition and its callers</h3><p>Ask once. Get where a function is defined, its parameters and every function that calls it.</p><code class="cmdpill">pgr about SomeFunction</code></div><span class="chip chip--measured">Measured with agents</span></article>
+        <article class="row"><div><h3>Searches code by meaning</h3><p>Describe a job in words. Get the function that does it.</p><p class="row-note">As the only command an agent had, it read from 14% fewer to 31% more tokens than no pgr, and 6 of 12 runs were fully correct. Its search quality alone is on the Results page.</p><code class="cmdpill">pgr find &quot;where tokens expire&quot;</code></div><span class="chip chip--mixed">Measured, mixed results</span></article>
+        <article class="row"><div><h3>Shows what a change touches</h3><p>Before an edit, see what depends on the code you are about to change.</p><code class="cmdpill">pgr affected SomeFunction</code></div><span class="chip chip--dev">Not measured</span></article>
+        <article class="row"><div><h3>Remembers findings</h3><p>What an agent already worked out does not have to be found again next time. How agents share notes is on the Teams page.</p><p class="row-note">Measured on a small set of questions that the builders wrote to need it.</p><code class="cmdpill">pgr recall &quot;how does login work&quot;</code></div><span class="chip chip--measured">Measured</span></article>
+      </div><!--/slot:does-->
+    </div>
+  </section>
+
+  <section class="screen screen--alt" id="teams" aria-labelledby="teams-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">Teams of agents</p><h2 class="title" id="teams-h">Many agents, one job.</h2><p class="lede">What pgr does when several agents work together, and how far each part has got.</p></div>
+      <!--slot:teams--><div class="rows rv">
+        <article class="row"><div><h3>Each agent&#x27;s tools in its own Linux environment</h3></div><span class="chip chip--measured">Measured</span></article>
+        <article class="row"><div><h3>Agents share what they find</h3></div><span class="chip chip--measured">Measured</span></article>
+        <article class="row"><div><h3>Knowledge kept across conversations</h3></div><span class="chip chip--available">Available</span></article>
+        <article class="row"><div><h3>Important information carried over before the context fills</h3></div><span class="chip chip--available">Available</span></article>
+        <article class="row"><div><h3>An own screen for browser agents</h3></div><span class="chip chip--dev">In development</span></article>
+      </div><!--/slot:teams-->
+      <div class="btn-row rv" style="margin-top:2rem"><a class="btn" href="teams.html">Read about teams</a></div>
+    </div>
+  </section>
+
+  <section class="screen" id="ad" aria-labelledby="ad-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">The ad</p><h2 class="title" id="ad-h">Why it exists.</h2></div>
+      <!--slot:ad--><div class="films rv" data-films>
+      <div class="seg" role="radiogroup" aria-label="Film" hidden><button type="button" role="radio" aria-checked="true" tabindex="0" data-value="ad">Ad, 34 s</button><button type="button" role="radio" aria-checked="false" tabindex="-1" data-value="explainer">Explainer, 105 s</button></div>
+      <figure class="film" data-kind="ad">
+        <div class="film-frame" style="aspect-ratio:1920/1080"><video controls playsinline preload="none" width="1920" height="1080" poster="media/pgr-trailer-poster.jpg" aria-label="Ad, 34 seconds">
+          <source src="media/pgr-trailer-1080p60.mp4" type="video/mp4">
+          <track kind="captions" src="media/pgr-trailer.en.vtt" srclang="en" label="English" default>
+          <p>This browser cannot play the video.</p>
+        </video></div>
+        <figcaption class="film-cap"><b>Ad, 34 seconds</b><span>With captions. It starts silent until you press play.</span></figcaption>
+        <div class="film-links"><p>Larger files</p><div class="btn-row"><a class="btn" href="media/pgr-trailer-2160p60.mp4">4K at 60 frames a second, 21 MB</a></div></div>
+      </figure>
+      <figure class="film" data-kind="explainer" hidden>
+        <div class="film-frame" style="aspect-ratio:1920/1080"><video controls playsinline preload="none" width="1920" height="1080" poster="media/pgr-explainer-poster.jpg" aria-label="Explainer, 105 seconds">
+          <source src="media/pgr-explainer-1080p60.mp4" type="video/mp4">
+          <track kind="captions" src="media/pgr-explainer.en.vtt" srclang="en" label="English" default>
+          <p>This browser cannot play the video.</p>
+        </video></div>
+        <figcaption class="film-cap"><b>Explainer, 105 seconds</b><span>With captions. It starts silent until you press play.</span></figcaption>
+        <div class="film-links"><p>Larger files</p><div class="btn-row"><a class="btn" href="media/pgr-explainer-2160p60.mp4">4K at 60 frames a second, 59 MB</a></div></div>
+      </figure>
+    </div><!--/slot:ad-->
+    </div>
+  </section>
+
+  <section class="screen screen--alt" id="install" aria-labelledby="install-h">
+    <div class="wrap">
+      <div class="screen-head rv"><p class="eyebrow">Install</p><h2 class="title" id="install-h">One paste.</h2><p class="lede">No account and no administrator rights. The installer downloads one program file, checks it and puts it in a folder of your own account.</p></div>
+      <div class="rv"><!--slot:cmdbox--><div class="cmd" data-cmdbox>
+          <div class="cmd-top"><div class="seg" role="radiogroup" aria-label="System"><button type="button" role="radio" aria-checked="true" tabindex="0" data-value="windows">Windows</button><button type="button" role="radio" aria-checked="false" tabindex="-1" data-value="unix">macOS and Linux</button></div><p class="cmd-note" data-sys="windows">Run it in PowerShell. No administrator rights.</p><p class="cmd-note" data-sys="unix" hidden>Run it in a terminal. No root.</p></div>
+          <div class="cmd-line" data-sys="windows"><code class="cmd-code">irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex</code><button type="button" class="copy" data-copy="irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex" aria-label="Copy the Windows command"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></div>
+          <div class="cmd-line" data-sys="unix" hidden><code class="cmd-code">curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh</code><button type="button" class="copy" data-copy="curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh" aria-label="Copy the macOS and Linux command"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7A2.2 2.2 0 0 0 4.5 6.7v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8"/></svg><span class="todo">Copy</span><span class="done">Copied</span></button></div>
+        </div><!--/slot:cmdbox--></div>
+      <div class="btn-row rv" style="margin-top:2rem"><a class="btn" href="install.html">More about installing</a></div>
+      <p class="note rv" style="margin-top:2.5rem"><b>Proprietary licence.</b> Free to download and use. Not open source. The source code is not published.</p>
+    </div>
+  </section>
+
+</main>
+<!--slot:foot--><footer class="foot">
+  <div class="wrap foot-in">
+    <nav aria-label="More"><a href="index.html">Overview</a><a href="results.html">Results</a><a href="teams.html">Teams</a><a href="install.html">Install</a><a href="https://github.com/Charlesganu2004/PeterGanuRusty">Public repository</a><a href="https://github.com/Charlesganu2004/PeterGanuRusty/blob/main/LICENSE.txt">Licence</a></nav>
+    <p>Copyright (c) 2026 Charles Ganu. All rights reserved. PeterGanuRusty is proprietary software: free to download and use, not open source. The source code is not published.</p>
+    <p>Built 2026-10-20 from the measured data. https://charlesganu2004.github.io/PeterGanuRusty/</p>
+  </div>
+</footer><!--/slot:foot-->
+<script src="data/showcase.js?v=c8330b98" defer></script>
+<script src="assets/site.js?v=c5bd0700" defer></script>
+</body>
+</html>

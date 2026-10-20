@@ -1,0 +1,85 @@
+WEBVTT
+
+1
+00:00:00.700 --> 00:00:04.340
+A brief made by PGR,
+placed in the agent's prompt.
+
+2
+00:00:05.940 --> 00:00:10.061
+70k to 71k tokens, in 1 turn.
+
+3
+00:00:11.661 --> 00:00:14.041
+Fully correct in 12 of 12 runs.
+
+4
+00:00:15.641 --> 00:00:22.046
+72% to 80% fewer tokens than
+no index, across 4 comparisons.
+
+5
+00:00:25.123 --> 00:00:30.252
+PeterGanuRusty is a desktop
+command-line tool for AI coding agents.
+
+6
+00:00:31.852 --> 00:00:35.195
+Written in Rust. It runs
+locally, with no account.
+
+7
+00:00:37.661 --> 00:00:39.556
+Find a function and its callers.
+
+8
+00:00:41.156 --> 00:00:43.484
+Find code by describing the job.
+
+9
+00:00:45.084 --> 00:00:46.635
+See what a change reaches.
+
+10
+00:00:48.235 --> 00:00:50.146
+Keep findings between sessions.
+
+11
+00:00:52.738 --> 00:00:55.171
+Here is the measured token comparison.
+
+12
+00:00:56.771 --> 00:01:02.372
+294k without an index. 71k with the brief.
+
+13
+00:01:03.972 --> 00:01:08.888
+76% fewer tokens.
+Claude Haiku 5.5, low effort,
+
+14
+00:01:08.888 --> 00:01:10.936
+first question set.
+
+15
+00:01:13.767 --> 00:01:16.513
+One repository. A few runs per cell.
+
+16
+00:01:18.113 --> 00:01:21.425
+The builders wrote the questions,
+including the second set.
+
+17
+00:01:23.025 --> 00:01:27.140
+These were code lookups.
+Open-ended coding work was not tested.
+
+18
+00:01:28.740 --> 00:01:32.713
+The study tests finding definitions
+and code by description.
+
+19
+00:01:35.670 --> 00:01:38.818
+PeterGanuRusty. One command installs it.
