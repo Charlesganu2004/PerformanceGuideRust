@@ -1,4 +1,4 @@
-/* PeterGanuRusty site. One theme in two lights, one rust accent, one radius scale.
+/* Performance Guide Rust site. One theme in two lights, one rust accent, one radius scale.
    Built for a desktop screen: the root size grows with the window (20 px up to 1536 wide, 25 px at 1920, 28 px from 2150),
    body text is never under 20 px at the common sizes, every control is at least 3 rem (60 px) tall, and each section holds
    one idea and one big number. Motion is transform and opacity only and stops for people who ask for less. */
@@ -50,10 +50,10 @@
     --text: #15171c;
     --muted: #4c525e;
     --faint: #656c79;
-    --accent: #d9501a;
+    --accent: #cc4819;
     --accent-ink: #b8400f;
     --on-accent: #ffffff;
-    --accent-soft: rgba(217, 80, 26, .10);
+    --accent-soft: rgba(204, 72, 25, .10);
     --bar-ref: #b9b2a5;
     --glass: rgba(251, 250, 248, .86);
     --code-bg: #15171c;
@@ -72,10 +72,10 @@
   --text: #15171c;
   --muted: #4c525e;
   --faint: #656c79;
-  --accent: #d9501a;
+  --accent: #cc4819;
   --accent-ink: #b8400f;
   --on-accent: #ffffff;
-  --accent-soft: rgba(217, 80, 26, .10);
+  --accent-soft: rgba(204, 72, 25, .10);
   --bar-ref: #b9b2a5;
   --glass: rgba(251, 250, 248, .86);
   --code-bg: #15171c;
@@ -127,7 +127,9 @@ code, kbd, pre { font-family: var(--mono); }
   :root:not([data-theme="dark"]) .icon-btn .sun { display: none; }
   :root:not([data-theme="dark"]) .icon-btn .moon { display: block; }
 }
-@media (max-width: 760px) { .nav-in { gap: .4rem; } .nav-links a { padding: 0 .7rem; } .brand span { display: none; } }
+/* The name "Performance Guide Rust" next to the four links needs about 900 px of the bar: below 1000 px the logo stands alone. */
+@media (max-width: 1000px) { .brand span { display: none; } }
+@media (max-width: 760px) { .nav-in { gap: .4rem; } .nav-links a { padding: 0 .7rem; } }
 @media (max-width: 480px) { .nav-links { gap: 0; } .nav-links a { padding: 0 .5rem; font-size: .9rem; } .icon-btn { width: 48px; height: 48px; } }
 
 /* ---------- type ---------- */
@@ -168,6 +170,8 @@ code, kbd, pre { font-family: var(--mono); }
 .seg button:hover { color: var(--text); }
 .seg button[aria-checked="true"] { background: var(--accent); color: var(--on-accent); }
 .seg button:focus-visible { outline-offset: 1px; }
+/* the three model names do not fit side by side on a phone: the choices wrap, in a rounded box and no longer a pill */
+@media (max-width: 760px) { .seg { flex-wrap: wrap; max-width: 100%; border-radius: var(--r-l); } .seg button { flex: 1 1 auto; } }
 
 /* the install command */
 .cmd { display: grid; gap: .9rem; }
@@ -277,6 +281,15 @@ code, kbd, pre { font-family: var(--mono); }
 
 .note { border-left: 3px solid var(--accent); padding: .3rem 0 .3rem 1.4rem; font-size: 1.15rem; color: var(--muted); max-width: 48rem; }
 .note b { color: var(--text); font-weight: 600; }
+.note p + p { margin-top: .9rem; }
+
+/* a second result inside a section (the graphics card under the neural network), set apart by a rule and a heading of its own */
+.subsection { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(1.5rem, 3vh, 2.4rem); border-top: 1px solid var(--line); padding-top: clamp(2rem, 5vh, 3.4rem); margin-top: .5rem; }
+.sub-head { font-size: clamp(1.7rem, 2.6vw, 2.5rem); line-height: 1.12; letter-spacing: -.025em; font-weight: 700; text-wrap: balance; }
+
+/* the line under a team item that says what was not confirmed in a live client */
+.item p.fine { font-size: 1.05rem; color: var(--faint); }
+.item p.fine b { color: var(--muted); font-weight: 650; }
 
 /* a run of copy under a block, and the two halves of a pair */
 .after { margin-top: 2rem; }
@@ -336,9 +349,11 @@ code, kbd, pre { font-family: var(--mono); }
 .picker-row { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.2rem; }
 .picker-label { font-weight: 650; color: var(--muted); min-width: 7.5rem; }
 .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r-l); background: var(--surface); }
+.tbl-wrap:focus-visible { border-radius: var(--r-l); }
 .tbl { width: 100%; border-collapse: collapse; font-size: 1rem; }
 .tbl th, .tbl td { padding: .95rem 1.1rem; text-align: right; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .tbl th:first-child, .tbl td:first-child { text-align: left; white-space: normal; min-width: 17rem; }
+@media (max-width: 760px) { .tbl th:first-child, .tbl td:first-child { min-width: 10rem; } }
 .tbl thead th { font-size: 1rem; color: var(--muted); font-weight: 650; background: var(--bg-2); }
 .tbl tbody tr:last-child th, .tbl tbody tr:last-child td { border-bottom: 0; }
 .tbl tbody th { font-weight: 560; }
@@ -367,7 +382,7 @@ code, kbd, pre { font-family: var(--mono); }
 .foot nav { display: flex; flex-wrap: wrap; gap: .4rem 1.8rem; }
 .foot nav a { display: inline-flex; align-items: center; min-height: var(--control); color: var(--muted); font-weight: 560; text-decoration: none; }
 .foot nav a:hover { color: var(--text); text-decoration: underline; }
-.foot p { color: var(--faint); font-size: 1rem; max-width: 56rem; }
+.foot p { color: var(--faint); font-size: 1rem; max-width: 56rem; overflow-wrap: anywhere; }
 
 /* ---------- reveal ---------- */
 

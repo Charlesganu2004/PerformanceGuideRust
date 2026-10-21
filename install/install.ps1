@@ -1,7 +1,7 @@
-# Installs pgr (PeterGanuRusty) for the current user on Windows. No administrator rights,
+# Installs pgr (Performance Guide Rust, PGR) for the current user on Windows. No administrator rights,
 # no Python, no other download: one program file, checked against the published SHA-256.
 #
-#   irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex
+#   irm https://github.com/Charlesganu2004/PerformanceGuideRust/releases/latest/download/install.ps1 | iex
 #
 # Options, set as environment variables before the line above:
 #   $env:PGR_VERSION     = "0.1.0"          a given release instead of the latest
@@ -13,7 +13,7 @@ $ErrorActionPreference = "Stop"
 $ProgressPreference = "SilentlyContinue"
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 
-$repo = "Charlesganu2004/PeterGanuRusty"
+$repo = "Charlesganu2004/PerformanceGuideRust"
 $asset = "pgr-windows-x86_64.exe"
 
 if (-not [Environment]::Is64BitOperatingSystem) {

@@ -1,8 +1,8 @@
 #!/bin/sh
-# Installs pgr (PeterGanuRusty) for the current user on Linux or macOS. No root, no Python,
+# Installs pgr (Performance Guide Rust, PGR) for the current user on Linux or macOS. No root, no Python,
 # no other download: one program file, checked against the published SHA-256.
 #
-#   curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh
+#   curl -fsSL https://github.com/Charlesganu2004/PerformanceGuideRust/releases/latest/download/install.sh | sh
 #
 # Options, set as environment variables before the line above:
 #   PGR_VERSION=0.1.0            a given release instead of the latest
@@ -11,7 +11,7 @@
 
 set -eu
 
-repo="Charlesganu2004/PeterGanuRusty"
+repo="Charlesganu2004/PerformanceGuideRust"
 
 fail() {
     echo "pgr: $1" >&2

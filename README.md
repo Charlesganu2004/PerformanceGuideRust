@@ -1,4 +1,4 @@
-# PeterGanuRusty (pgr)
+# Performance Guide Rust (PGR)
 
 A desktop command-line tool for AI coding agents. The agent asks where something is
 defined, what calls it and what a change reaches, and gets the answer in one step,
@@ -6,8 +6,8 @@ from an index of the repository it works in. It runs on your own machine, with n
 account, no server and no network use, and works with any agent that can run a
 command, including Claude Code and the Codex CLI.
 
-- **Results and how they were measured:** https://charlesganu2004.github.io/PeterGanuRusty/
-- **Downloads:** [Releases](https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest)
+- **Results and how they were measured:** https://charlesganu2004.github.io/PerformanceGuideRust/
+- **Downloads:** [Releases](https://github.com/Charlesganu2004/PerformanceGuideRust/releases/latest)
   for Windows, macOS (Apple silicon and Intel) and Linux (x86-64 and ARM)
 
 ## Install
@@ -15,13 +15,13 @@ command, including Claude Code and the Codex CLI.
 Windows (PowerShell, no administrator rights):
 
 ```powershell
-irm https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.ps1 | iex
+irm https://github.com/Charlesganu2004/PerformanceGuideRust/releases/latest/download/install.ps1 | iex
 ```
 
 macOS and Linux:
 
 ```sh
-curl -fsSL https://github.com/Charlesganu2004/PeterGanuRusty/releases/latest/download/install.sh | sh
+curl -fsSL https://github.com/Charlesganu2004/PerformanceGuideRust/releases/latest/download/install.sh | sh
 ```
 
 Each installer downloads one program file, checks it against the published

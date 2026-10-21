@@ -1,4 +1,4 @@
-/* PeterGanuRusty site: the theme, the copy buttons, the install tabs, the first-screen replay, the picker of the leaderboard,
+/* Performance Guide Rust site: the theme, the copy buttons, the install tabs, the first-screen replay, the picker of the leaderboard,
    the chooser of the films and the small motion. Every page is complete without this file; it adds. Nothing is sent anywhere. */
 (function () {
   'use strict';

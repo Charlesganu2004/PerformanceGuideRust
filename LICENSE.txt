@@ -1,7 +1,7 @@
-PeterGanuRusty Software License
+Performance Guide Rust (PGR) Software License
 Copyright (c) 2026 Charles Ganu. All rights reserved.
 
-1. Ownership. PeterGanuRusty, the pgr program, its source code, documentation,
+1. Ownership. PGR, the pgr program, its source code, documentation,
    benchmark data, website, films and all related material (together, the
    "Software") are owned by Charles Ganu and are protected by copyright and other
    laws. No right of ownership passes to you.
@@ -44,4 +44,4 @@ Copyright (c) 2026 Charles Ganu. All rights reserved.
    by the terms published with it.
 
 Questions about this licence: open an issue at
-https://github.com/Charlesganu2004/PeterGanuRusty/issues
+https://github.com/Charlesganu2004/PerformanceGuideRust/issues
