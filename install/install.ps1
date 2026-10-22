@@ -4,7 +4,7 @@
 #   irm https://github.com/Charlesganu2004/PerformanceGuideRust/releases/latest/download/install.ps1 | iex
 #
 # Options, set as environment variables before the line above:
-#   $env:PGR_VERSION     = "0.1.0"          a given release instead of the latest
+#   $env:PGR_VERSION     = "0.3.0"          a given release instead of the latest
 #   $env:PGR_INSTALL_DIR = "C:\some\folder" where pgr.exe goes (default: %LOCALAPPDATA%\Programs\pgr)
 #   $env:PGR_NO_PATH     = "1"              do not add that folder to the user PATH
 #   $env:PGR_BASE_URL    = "https://..."    another place that holds the release files (for mirrors and tests)

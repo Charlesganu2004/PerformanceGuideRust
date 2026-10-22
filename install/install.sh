@@ -5,7 +5,7 @@
 #   curl -fsSL https://github.com/Charlesganu2004/PerformanceGuideRust/releases/latest/download/install.sh | sh
 #
 # Options, set as environment variables before the line above:
-#   PGR_VERSION=0.1.0            a given release instead of the latest
+#   PGR_VERSION=0.3.0            a given release instead of the latest
 #   PGR_INSTALL_DIR=/some/folder where pgr goes (default: $HOME/.local/bin)
 #   PGR_BASE_URL=https://...     another place that holds the release files (for mirrors and tests)
 
